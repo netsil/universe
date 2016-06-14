@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "netsil": {
+      "description": "Netsil configuration properties",
+      "properties": {
+        "name": {
+          "default": "netsil",
+          "description": "Name for netsil",
+          "type": "string"
+        },
+        "cpus": {
+          "default": 4.0,
+          "description": "CPU to allocate to each netsil.",
+          "minimum": 4.0,
+          "type": "number"
+        },
+        "mem": {
+          "default": 4096,
+          "description": "Memory (MB) to allocate to each nginx task.",
+          "minimum": 4096,
+          "type": "integer"
+        },
+        "instances": {
+          "default": 1,
+          "description": "Number of instances of netsil to run.",
+          "minimum": 1,
+          "type": "integer"
+        },
+        "role": {
+          "default": "*",
+          "description": "Deploy nginx only on nodes with this role.",
+          "type": "string"
+        }
+      },
+      "required": ["name", "cpus", "mem", "instances"],
+      "type": "object"
+    }
+  }
+}

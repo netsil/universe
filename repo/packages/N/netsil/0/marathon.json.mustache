@@ -1,0 +1,37 @@
+{
+  "id": "{{netsil.name}}",
+  "cpus": {{netsil.cpus}},
+  "mem": {{netsil.mem}},
+  "instances": {{netsil.instances}},
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "{{resource.assets.container.docker.netsil}}",
+      "forcePullImage": false,
+      "network": "BRIDGE",    
+      "portMappings": [
+        { "containerPort": 443, "hostPort": 31443 },
+        { "containerPort": 2001, "hostPort": 31201 },
+        { "containerPort": 2003, "hostPort": 31203 },
+        { "containerPort": 2004, "hostPort": 31204, "protocol": "udp" },
+        { "containerPort": 5000, "hostPort": 31500 }
+      ]
+    }
+  },
+  "env": {
+    "PRODUCT_FLAVOR": "Lite",
+    "DEPLOY_ENV": "docker-compose",
+    "BUILD_ENV": "production",
+    "NODEJS_ENV=NODE_ENV": "production",
+    "EVENT_TYPES": "alert,comment,event,notification",
+    "NETSIL_BUILD_BRANCH": "stable"
+  },
+  "acceptedResourceRoles": [
+    "{{netsil.role}}"
+  ],
+  "labels": {
+    "DCOS_SERVICE_NAME": "{{netsil.name}}",
+    "DCOS_SERVICE_SCHEME": "http",
+    "DCOS_SERVICE_PORT_INDEX": "0"
+  }
+}
