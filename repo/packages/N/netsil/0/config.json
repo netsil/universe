@@ -11,13 +11,13 @@
         },
         "cpus": {
           "default": 4.0,
-          "description": "CPU to allocate to each netsil.",
+          "description": "CPU to allocate to each instance of netsil.",
           "minimum": 4.0,
           "type": "number"
         },
         "mem": {
           "default": 4096,
-          "description": "Memory (MB) to allocate to each nginx task.",
+          "description": "Memory (MB) to allocate to each instance of netsil.",
           "minimum": 4096,
           "type": "integer"
         },
@@ -29,7 +29,7 @@
         },
         "role": {
           "default": "*",
-          "description": "Deploy nginx only on nodes with this role.",
+          "description": "Deploy netsil only on nodes with this role.",
           "type": "string"
         }
       },
