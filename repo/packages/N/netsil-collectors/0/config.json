@@ -28,7 +28,7 @@
           "type": "integer"
         },
         "public_role": {
-          "default": "*",
+          "default": "slave_public",
           "description": "Deploy the collectors on nodes with this role. For DC/OS, use the 'slave_public' role to deploy on a publc slave node.",
           "type": "string"
         },
@@ -55,7 +55,7 @@
           "type": "string"
         }
       },
-      "required": ["name", "cpus", "mem", "instances", "https_port", "infra_stats_port", "traffic_stats_port"],
+      "required": ["name", "cpus", "mem", "instances", "infra_stats_port", "traffic_stats_port"],
       "type": "object"
     }
   }

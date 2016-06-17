@@ -23,12 +23,7 @@
           {
               "containerPort": 2003,
               "hostPort": {{netsil.traffic_stats_port}},
-              "protocol": "tcp"
-          },
-          {
-              "containerPort": 2004,
-              "hostPort": {{netsil.traffic_stats_data_port}},
-              "protocol": "udp"
+              "protocol": "udp,tcp"
           }
       ]
     }
