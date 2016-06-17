@@ -29,11 +29,40 @@
         },
         "role": {
           "default": "*",
-          "description": "Deploy netsil only on nodes with this role.",
+          "description": "Deploy netsil only on nodes with this role. For DC/OS, use the 'slave_public' role to deploy on a publc slave node.",
+          "type": "string"
+        },
+        "https_port": {
+          "default": 443,
+          "description": "The HTTPS port used to access Netsil.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "infra_stats_port": {
+          "default": 2001,
+          "description": "The port for collecting infrastructure stats.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "traffic_stats_port": {
+          "default": 2003,
+          "description": "The port for traffic collection.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "traffic_stats_data_port": {
+          "default": 2004,
+          "description": "The data port for traffic collection.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "version_number": {
+          "default": "0.2.329",
+          "description": "The version of netsil to use.",
           "type": "string"
         }
       },
-      "required": ["name", "cpus", "mem", "instances"],
+      "required": ["name", "cpus", "mem", "instances", "https_port", "infra_stats_port", "traffic_stats_port"],
       "type": "object"
     }
   }

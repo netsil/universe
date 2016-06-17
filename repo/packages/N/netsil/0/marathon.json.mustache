@@ -6,23 +6,38 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "{{resource.assets.container.docker.netsil}}",
+      "image": "{{resource.assets.container.docker.netsil}}:release-{{netsil.version_number}}",
       "forcePullImage": false,
       "network": "BRIDGE",    
       "portMappings": [
-        { "containerPort": 443, "hostPort": 31443 },
-        { "containerPort": 2001, "hostPort": 31201 },
-        { "containerPort": 2003, "hostPort": 31203 },
-        { "containerPort": 2004, "hostPort": 31204, "protocol": "udp" },
-        { "containerPort": 5000, "hostPort": 31500 }
+          {
+              "containerPort": 443,
+              "hostPort": {{netsil.https_port}},
+              "protocol": "tcp"
+          },
+          {
+              "containerPort": 2001,
+              "hostPort": {{netsil.infra_stats_port}},
+              "protocol": "tcp"
+          },
+          {
+              "containerPort": 2003,
+              "hostPort": {{netsil.traffic_stats_port}},
+              "protocol": "tcp"
+          },
+          {
+              "containerPort": 2004,
+              "hostPort": {{netsil.traffic_stats_data_port}},
+              "protocol": "udp"
+          }
       ]
     }
   },
   "env": {
     "PRODUCT_FLAVOR": "Lite",
-    "DEPLOY_ENV": "docker-compose",
+    "DEPLOY_ENV": "marathon",
     "BUILD_ENV": "production",
-    "NODEJS_ENV=NODE_ENV": "production",
+    "NODEJS_ENV=NODE_ENV": "NODE_ENV=production",
     "EVENT_TYPES": "alert,comment,event,notification",
     "NETSIL_BUILD_BRANCH": "stable"
   },

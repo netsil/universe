@@ -7,7 +7,7 @@
   "assets": {
     "container": {
       "docker": {
-        "netsil": "netsil/netsil-lite:stable-0.2.14"
+        "netsil": "netsil/netsil-lite"
       }
     }
   }
