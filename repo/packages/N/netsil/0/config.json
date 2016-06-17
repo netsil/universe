@@ -12,7 +12,7 @@
         "cpus": {
           "default": 4.0,
           "description": "CPU to allocate to each instance of netsil.",
-          "minimum": 4.0,
+          "minimum": 2.0,
           "type": "number"
         },
         "mem": {
