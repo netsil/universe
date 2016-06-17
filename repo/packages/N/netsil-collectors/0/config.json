@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "netsil": {
+    "netsil-collectors": {
       "description": "Netsil collectors configuration properties",
       "properties": {
         "name": {
