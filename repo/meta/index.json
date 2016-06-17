@@ -419,6 +419,22 @@
       }
     },
     {
+      "currentVersion":"0.2.22",
+      "description":"The collectors package for Netsil.",
+      "framework":false,
+      "name":"netsil-collectors",
+      "selected":false,
+      "tags":[
+        "netsil",
+        "monitoring",
+        "microservices",
+        "collectors"
+      ],
+      "versions":{
+        "0.2.22":"0"
+      }
+    },
+    {
       "currentVersion":"1.8.1",
       "description":"Nginx package",
       "framework":false,

@@ -1,0 +1,17 @@
+{
+  "packagingVersion": "2.0",
+  "name": "netsil-collectors",
+  "version": "0.2.22",
+  "description": "The collectors package for Netsil.",
+  "maintainer": "support@netsil.com",
+  "tags": ["netsil", "monitoring", "microservices", "collectors"],
+  "preInstallNotes": "Preparing to install netsil-collectors.",
+  "postInstallNotes": "Netsil collectors are getting installed.",
+  "postUninstallNotes": "Netsil collectors are uninstalled successfully.",
+  "licenses": [
+    {
+      "name": "MIT License",
+      "url": "https://github.com/Dynatrace/Dynatrace-Docker/blob/master/LICENSE"
+    }
+  ]
+}
