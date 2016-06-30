@@ -419,7 +419,7 @@
       }
     },
     {
-      "currentVersion":"0.3",
+      "currentVersion":"0.4",
       "description":"The collectors package for Netsil.",
       "framework":false,
       "name":"netsil-collectors",
@@ -431,7 +431,7 @@
         "collectors"
       ],
       "versions":{
-        "0.3":"0"
+        "0.4":"0"
       }
     },
     {

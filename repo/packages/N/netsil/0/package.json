@@ -2,16 +2,16 @@
   "packagingVersion": "2.0",
   "name": "netsil",
   "version": "0.4",
-  "description": "Netsil, a monitoring solution. Listen to your APIs!",
+  "description": "Netsil is a monitoring solution. Listen to your APIs!",
   "maintainer": "support@netsil.com",
   "tags": ["netsil", "monitoring", "microservices"],
   "preInstallNotes": "Preparing to install netsil.",
-  "postInstallNotes": "Netsil is getting installed.",
+  "postInstallNotes": "Netsil is installed!",
   "postUninstallNotes": "Netsil is uninstalled successfully.",
   "licenses": [
     {
       "name": "MIT License",
-      "url": "https://github.com/angular/angular.js/blob/master/LICENSE"
+      "url": "https://mit-license.org"
     }
   ]
 }

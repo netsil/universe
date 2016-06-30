@@ -1,8 +1,8 @@
 {
   "images": {
-    "icon-small": "https://s3.amazonaws.com/docs.netsil.com/logos/netsil-logo-2x.png",
-    "icon-medium": "https://s3.amazonaws.com/docs.netsil.com/logos/netsil-logo-2x.png",
-    "icon-large": "https://s3.amazonaws.com/docs.netsil.com/logos/Netsil_500x500.jpg"
+    "icon-small": "https://s3.amazonaws.com/docs.netsil.com/logos/netsilsquare-48x48.png",
+    "icon-medium": "https://s3.amazonaws.com/docs.netsil.com/logos/netsilsquare-96x96.png",
+    "icon-large": "https://s3.amazonaws.com/docs.netsil.com/logos/netsilsquare-256x256.png"
   },
   "assets": {
     "container": {
