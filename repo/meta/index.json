@@ -404,7 +404,7 @@
       }
     },
     {
-      "currentVersion":"0.3",
+      "currentVersion":"0.4",
       "description":"Netsil, a monitoring solution. Listen to your APIs!",
       "framework":false,
       "name":"netsil",
@@ -415,11 +415,11 @@
         "microservices"
       ],
       "versions":{
-        "0.3":"0"
+        "0.4":"0"
       }
     },
     {
-      "currentVersion":"0.2.22",
+      "currentVersion":"0.3",
       "description":"The collectors package for Netsil.",
       "framework":false,
       "name":"netsil-collectors",
@@ -431,7 +431,7 @@
         "collectors"
       ],
       "versions":{
-        "0.2.22":"0"
+        "0.3":"0"
       }
     },
     {
