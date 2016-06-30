@@ -6,7 +6,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "{{resource.assets.container.docker.netsil}}:master-{{netsil.version_number}}",
+      "image": "{{resource.assets.container.docker.netsil}}:stable-{{netsil.version_number}}",
       "forcePullImage": false,
       "network": "BRIDGE",    
       "portMappings": [
@@ -28,7 +28,7 @@
       ]
     }
   },
-  "args": ["/root/start.sh", "no-build", "netsil-lite"],
+  "args": ["/root/start.sh", "run", "netsil-lite"],
   "env": {
     "PRODUCT_FLAVOR": "Lite",
     "DEPLOY_ENV": "marathon",

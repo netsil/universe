@@ -51,7 +51,7 @@
           "type": "integer"
         },
         "version_number": {
-          "default": "0.2.329",
+          "default": "0.2.26",
           "description": "The version of netsil to use.",
           "type": "string"
         }
