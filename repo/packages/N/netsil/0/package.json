@@ -1,7 +1,7 @@
 {
   "packagingVersion": "2.0",
   "name": "netsil",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Netsil, a monitoring solution. Listen to your APIs!",
   "maintainer": "support@netsil.com",
   "tags": ["netsil", "monitoring", "microservices"],
